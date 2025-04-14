@@ -29,7 +29,7 @@ for i in range(5):
     title = driver.find_element(By.CSS_SELECTOR, 'div.song_name').text
     # 아티스트 이름 가져오기
     artist = driver.find_element(By.CSS_SELECTOR, 'div.artist > a > span').text
-    # 메타 데이터 가져오기 (사용되지 않음)
+    # 발매일 가져오기
     meta_data = driver.find_elements(By.CSS_SELECTOR, 'div.meta dd')
     # 발매일 가져오기
     publish_date = driver.find_element(By.CSS_SELECTOR, 'dl.list > dd:nth-of-type(2)').text
